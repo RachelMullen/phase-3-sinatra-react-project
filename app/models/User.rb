@@ -17,4 +17,8 @@ class User < ActiveRecord::Base
         }
     end
 
+    def get_game
+        self.visits.all
+    end
+
 end
