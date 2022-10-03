@@ -31,6 +31,12 @@ Place.create(name: "Colorado New Style Dance Center", latitude: 0, longitude: 0)
 Place.create(name: "Evergreen School of Ballet - Le Petit", latitude: 0, longitude: 0)
 Place.create(name: "Denver Dance Center", latitude: 0, longitude: 0)
 
+# Comments
+Comment.create(body: "I love this place! From Elliot", user_id: User.first.id, place_id: Place.find_by(name: "Denver Botanical Gardens").id)
+Comment.create(body: "I love this place! From Rachel", user_id: User.second.id, place_id: Place.find_by(name: "Denver Selfie Museum").id)
+Comment.create(body: "I love this place! From Luke", user_id: User.third.id, place_id: Place.find_by(name: "Denver Park").id)
+Comment.create(body: "I love this place! From Cassidy", user_id: User.fourth.id, place_id: Place.find_by(name: "Colorado New Style Dance Center").id)
+
 # Visits by Hunt & User
 # 1
 Visit.create(
