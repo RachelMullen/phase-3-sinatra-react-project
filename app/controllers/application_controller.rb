@@ -10,9 +10,13 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/users' do
-    user = User.create(username: params[:username], password: params[:password]).to_json
-    in_progress = user.hunts.uniq
-    [user, in_progress]
+    if (!User.all.find_by(username: params[:username]))
+      user = User.create(username: params[:username], password: params[:password]).to_json
+      in_progress = user.hunts.uniq
+      [user, in_progress]
+    else
+      nil
+    end
   end
 
   # Visit Array Routes

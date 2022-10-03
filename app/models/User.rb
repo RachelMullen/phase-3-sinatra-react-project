@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
     has_many :visits
+    has_many :hunts
     has_many :places, through: :visits
     has_many :hunts, through: :visits
 
