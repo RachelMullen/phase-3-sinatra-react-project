@@ -5,8 +5,8 @@ class ApplicationController < Sinatra::Base
   # Get User & In Progress
   get '/users/:username' do
     user = User.find_by(username: params[:username]).to_json
-    in_progress = user.hunts.uniq
-    [user, in_progress]
+    # in_progress = user.hunts.uniq
+    # [user, in_progress]
   end
 
   post '/users' do
