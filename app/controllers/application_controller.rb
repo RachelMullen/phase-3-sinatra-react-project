@@ -6,7 +6,7 @@ class ApplicationController < Sinatra::Base
   get '/users/:username/:password' do
     user = User.find_by(username: params[:username])
     if (user.password == params[:password])
-      [user.lists, user.in_progress, user.stats].to_json
+      [user, user.lists, user.in_progress, user.stats].to_json
     else
       "No user with that username and password was found."
     end
@@ -14,7 +14,8 @@ class ApplicationController < Sinatra::Base
 
   post '/users' do
     if (!User.all.find_by(username: params[:username]))
-      User.create(username: params[:username], password: params[:password]).to_json
+      user = User.create(username: params[:username], password: params[:password])
+      [user, user.lists, user.in_progress, user.stats].to_json
     else
       "A user with this username already exists."
     end
