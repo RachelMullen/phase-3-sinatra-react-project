@@ -3,21 +3,25 @@ class ApplicationController < Sinatra::Base
   
   # User Routes
   # Get User & In Progress
-  get '/users/:username' do
-    user = User.find_by(username: params[:username]).to_json
-    # in_progress = user.hunts.uniq
-    # [user, in_progress]
+  get '/users/:username/:password' do
+    user = User.find_by(username: params[:username])
+    in_progress = user.hunts.uniq
+    [user, in_progress].to_json
+    if (user.password == params[:password])
+      [user, in_progress].to_json
+    else
+      "No user with that username and password was found."
+    end
   end
 
   post '/users' do
     if (!User.all.find_by(username: params[:username]))
-      user = User.create(username: params[:username], password: params[:password]).to_json
-      in_progress = user.hunts.uniq
-      [user, in_progress]
+      User.create(username: params[:username], password: params[:password]).to_json
     else
-      nil
+      "A user with this username already exists."
     end
   end
+
 
   # Get Current Game
   get "/:user_id/:hunt_id/" do
