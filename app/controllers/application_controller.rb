@@ -38,5 +38,10 @@ class ApplicationController < Sinatra::Base
   post "/:place_id/comments" do
     Comment.create(body: params[:body], place_id: params[:place_id], user_id: params[:user_id]).to_json
   end
+
+  # Get public 
+  get "/public" do
+    Hunt.where(public: true).to_json(include: :places)
+  end
  
 end
