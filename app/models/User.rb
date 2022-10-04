@@ -23,4 +23,35 @@ class User < ActiveRecord::Base
         self.visits.all
     end
 
+    def favorites
+        self.visits.where(favorite: true).map{|v| v.place.commented}
+    end
+
+    def wishlist
+        self.visits.where(wishlist: true).map{|v| v.place.commented}
+    end
+
+    def avoids
+        self.visits.where(avoid: true).map{|v| v.place.commented}
+    end
+
+    def lists
+        {
+            "favorites": self.favorites,
+            "wishlist": self.wishlist,
+            "avoids": self.avoids,
+        }
+    end
+
+    def in_progress
+        {in_progress: hunts.uniq.map{|h| {h.title => h.with_visits(self)}}}
+    end
+    
+
+    def stats
+        {stats: {
+        score: self.visits.where(complete: true).count * 10,
+        }}
+    end
+
 end

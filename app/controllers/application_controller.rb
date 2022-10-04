@@ -5,10 +5,8 @@ class ApplicationController < Sinatra::Base
   # Get User & In Progress
   get '/users/:username/:password' do
     user = User.find_by(username: params[:username])
-    in_progress = user.hunts.uniq
-    [user, in_progress].to_json
     if (user.password == params[:password])
-      [user, in_progress].to_json
+      [user.lists, user.in_progress, user.stats].to_json
     else
       "No user with that username and password was found."
     end
