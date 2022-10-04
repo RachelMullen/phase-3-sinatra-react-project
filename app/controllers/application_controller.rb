@@ -36,7 +36,7 @@ class ApplicationController < Sinatra::Base
 
   # Add a comment
   post "/:place_id/comments" do
-    Comment.create(body: params[:body], place_id: params[:place_id], user_id: params[:user_id])
+    Comment.create(body: params[:body], place_id: params[:place_id], user_id: params[:user_id]).to_json
   end
  
 end
