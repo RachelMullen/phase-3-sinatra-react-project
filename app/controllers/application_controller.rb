@@ -22,15 +22,16 @@ class ApplicationController < Sinatra::Base
     end
   end
 
-
   # Get Current Game
   get "/games/:user_id/:hunt_id" do
     User.find(params[:user_id]).visits.where(hunt_id: params[:hunt_id]).to_json
   end
 
-  # Visit a place
-  patch "/:visit_id" do
-    Visit.find(params[:visit_id]).update(complete: params[:complete])
+  # Update visit completed status
+  patch "/visits/:visit_id" do
+    visit = Visit.find(params[:visit_id])
+    visit.update(complete: params[:complete])
+    visit.to_json
   end
 
   # Add a comment
