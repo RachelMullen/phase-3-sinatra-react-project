@@ -24,8 +24,8 @@ class ApplicationController < Sinatra::Base
 
 
   # Get Current Game
-  get "/:user_id/:hunt_id/" do
-    User.find(params[:user_id]).visits.where(hunt_id: params[:id]).to_json(include: :place)
+  get "/games/:user_id/:hunt_id" do
+    User.find(params[:user_id]).visits.where(hunt_id: params[:hunt_id]).to_json
   end
 
   # Visit a place
