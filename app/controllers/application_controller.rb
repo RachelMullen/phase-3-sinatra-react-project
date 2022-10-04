@@ -22,7 +22,7 @@ class ApplicationController < Sinatra::Base
     end
   end
 
-  # Get Current Game
+  # Get A Game
   get "/games/:user_id/:hunt_id" do
     User.find(params[:user_id]).visits.where(hunt_id: params[:hunt_id]).to_json
   end
@@ -42,6 +42,14 @@ class ApplicationController < Sinatra::Base
   # Get public 
   get "/public" do
     Hunt.where(public: true).to_json(include: :places)
+  end
+
+  # Get user dashboard things!
+  get "/:user_id/lists" do
+    favorites = User.find(params[:user_id]).visits.where(favorite: true).to_json(include: :place)
+    wishlist = User.find(params[:user_id]).visits.where(wishlist: true).to_json(include: :place)
+    avoids = User.find(params[:user_id]).visits.where(avoid: true).to_json(include: :place)
+    [favorites, wishlist, avoids]
   end
  
 end
