@@ -50,5 +50,10 @@ class ApplicationController < Sinatra::Base
     avoids = User.find(params[:user_id]).visits.where(avoid: true).to_json(include: :place)
     [favorites, wishlist, avoids]
   end
+
+  #Start a Hunt
+  get "/:user_id/:hunt_id/start" do
+    User.find(params[:user_id]).start_hunt(Hunt.find(params[:hunt_id])).to_json
+  end
  
 end

@@ -5,12 +5,12 @@ class User < ActiveRecord::Base
     has_many :places, through: :visits
     has_many :hunts, through: :visits
 
-    def start_hunt (hunt_instance)
-        hunt_instance.places.map{|p|
+    def start_hunt (hunt)
+        hunt.places.map{|p|
             Visit.create(
                 user_id: self.id,
                 place_id: p.id,
-                hunt_id: hunt_instance.id,
+                hunt_id: hunt.id,
                 complete: false,
                 wishlist: rand(2) == 1 ? true : false,
                 favorite: rand(2) == 1 ? true : false,
