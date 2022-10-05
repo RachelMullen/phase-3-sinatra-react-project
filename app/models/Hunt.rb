@@ -6,7 +6,7 @@ class Hunt < ActiveRecord::Base
 
 
     def with_visits (user)
-        self.places.map{|p| [p.commented,p.find_visit(user, self)]}
+        self.places.uniq.map{|p| [p.commented,p.find_visit(user, self)]}
     end
 
     # def game_format (user)
