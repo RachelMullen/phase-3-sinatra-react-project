@@ -40,7 +40,7 @@ class ApplicationController < Sinatra::Base
 
   # Get public 
   get "/public" do
-    Hunt.where(public: true).to_json(include: :places)
+    Hunt.where(public: true).uniq.map{|h| {h.title => h}}.to_json
   end
 
   # Get user dashboard things!
