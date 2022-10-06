@@ -59,5 +59,21 @@ class ApplicationController < Sinatra::Base
   patch "/:visit_id" do
     Visit.find(params[:visit_id]).update(complete: params[:complete]).to_json
   end
+
+  delete "/:user_id/destroy" do
+    User.find(params[:user_id]).destroy.to_json
+  end
+
+  patch "/:user_id/bioupdate" do
+    User.find(params[:user_id]).update(bio: params[:bio]).to_json
+  end
+
+  delete "/deletewebsite" do
+    [User.destroy_all.to_json,
+    Visit.destroy_all.to_json,
+    Place.destroy_all.to_json,
+    Hunt.destroy_all.to_json,
+    Comment.destroy_all.to_json]
+  end
  
 end
