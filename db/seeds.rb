@@ -3,10 +3,10 @@ puts "🌱 Seeding spices..."
 # Seed your database here
 
 # Users
-User.create(username: "Elliot", password: "Elliot1234")
-User.create(username: "Rachel", password: "Rachel1234")
-User.create(username: "Luke", password: "Luke1234")
-User.create(username: "Cassidy", password: "Cassidy1234")
+User.create(username: "Elliot", bio: "I am a tub of hummus", locale: "Denver", password: "Elliot1234")
+User.create(username: "Rachel", bio: "Rachel's bio", locale: "Denver", password: "Rachel1234")
+User.create(username: "Luke", bio: "Luke's bio", locale: "Denver", password: "Luke1234")
+User.create(username: "Cassidy", bio: "Cass bio", locale: "Denver", password: "Cassidy1234")
 
 # Hunts
 Hunt.create(title: "Plant Tour of Denver", user_id: User.first.id, public: true)

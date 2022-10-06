@@ -55,5 +55,9 @@ class ApplicationController < Sinatra::Base
   get "/:user_id/:hunt_id/start" do
     User.find(params[:user_id]).start_hunt(Hunt.find(params[:hunt_id])).to_json
   end
+
+  patch "/:visit_id" do
+    Visit.find(params[:visit_id]).update(complete: params[:complete]).to_json
+  end
  
 end
