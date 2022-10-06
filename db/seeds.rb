@@ -15,9 +15,9 @@ Hunt.create(title: "Parks of Denver", user_id: User.third.id, public: true)
 Hunt.create(title: "Dance Studios of Denver", user_id: User.fourth.id, public: true)
 
 # Places by Hunt
-Place.create(name: "Denver Botanical Gardens", latitude: 0, longitude: 0)
-Place.create(name: "Regis University Arboretum", latitude: 0, longitude: 0)
-Place.create(name: "Baker Gardens", latitude: 0, longitude: 0)
+Place.create(name: "Denver Botanical Gardens", latitude: 39.73310584820331, longitude: -104.96037223902049)
+Place.create(name: "Regis University Arboretum", latitude: 39.791315175389094, longitude: -105.03375557476444)
+Place.create(name: "Baker Gardens", latitude: 39.72314725868774, longitude: -104.9923710480569)
 
 Place.create(name: "Denver Selfie Museum", latitude: 0, longitude: 0)
 Place.create(name: "Meow Wolf Denver", latitude: 0, longitude: 0)
