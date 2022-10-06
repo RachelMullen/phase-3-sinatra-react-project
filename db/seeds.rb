@@ -15,21 +15,21 @@ Hunt.create(title: "Parks of Denver", user_id: User.third.id, public: true)
 Hunt.create(title: "Dance Studios of Denver", user_id: User.fourth.id, public: true)
 
 # Places by Hunt
-Place.create(name: "Denver Botanical Gardens", latitude: 39.73310584820331, longitude: -104.96037223902049)
-Place.create(name: "Regis University Arboretum", latitude: 39.791315175389094, longitude: -105.03375557476444)
-Place.create(name: "Baker Gardens", latitude: 39.72314725868774, longitude: -104.9923710480569)
+Place.create(name: "Denver Botanical Gardens", description: "this is a place", latitude: 39.73310584820331, longitude: -104.96037223902049)
+Place.create(name: "Regis University Arboretum", description: "this is a place", latitude: 39.791315175389094, longitude: -105.03375557476444)
+Place.create(name: "Baker Gardens", description: "this is a place", latitude: 39.72314725868774, longitude: -104.9923710480569)
 
-Place.create(name: "Denver Selfie Museum", latitude: 0, longitude: 0)
-Place.create(name: "Meow Wolf Denver", latitude: 0, longitude: 0)
-Place.create(name: "Denver Art Museum", latitude: 0, longitude: 0)
+Place.create(name: "Denver Selfie Museum", description: "this is a place", latitude: 0, longitude: 0)
+Place.create(name: "Meow Wolf Denver", description: "this is a place", latitude: 0, longitude: 0)
+Place.create(name: "Denver Art Museum", description: "this is a place", latitude: 0, longitude: 0)
 
-Place.create(name: "Denver Park", latitude: 0, longitude: 0)
-Place.create(name: "Cheesman Park", latitude: 0, longitude: 0)
-Place.create(name: "Confluence Park", latitude: 0, longitude: 0)
+Place.create(name: "Denver Park", description: "this is a place", latitude: 0, longitude: 0)
+Place.create(name: "Cheesman Park", description: "this is a place", latitude: 0, longitude: 0)
+Place.create(name: "Confluence Park", description: "this is a place", latitude: 0, longitude: 0)
 
-Place.create(name: "Colorado New Style Dance Center", latitude: 0, longitude: 0)
-Place.create(name: "Evergreen School of Ballet - Le Petit", latitude: 0, longitude: 0)
-Place.create(name: "Denver Dance Center", latitude: 0, longitude: 0)
+Place.create(name: "Colorado New Style Dance Center", description: "this is a place", latitude: 0, longitude: 0)
+Place.create(name: "Evergreen School of Ballet - Le Petit", description: "this is a place", latitude: 0, longitude: 0)
+Place.create(name: "Denver Dance Center", description: "this is a place", latitude: 0, longitude: 0)
 
 # Comments
 Comment.create(body: "I love this place! From Elliot", user_id: User.first.id, place_id: Place.find_by(name: "Denver Botanical Gardens").id)
