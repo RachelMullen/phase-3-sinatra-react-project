@@ -304,7 +304,7 @@ Place.create(name: "Sound Museum Vision", description: "I played my first over-s
 Place.create(name: "Nakameguro Lounge", description: "Coffee shop located 30 seconds from the train featuring a mellow atmosphere and cozy beverages.", latitude: 35.643044248148044, longitude: 139.69717538007754)
 Place.create(name: "英会話シェアハウス", description: "First place I lived in Tokyo.", latitude: 35.61845530450259, longitude: 139.523109455393)
 Place.create(name: "Takaido Station", description: "Second place I lived in Tokyo.", latitude: 35.68342835627, longitude: 139.6152812288455)
-Place.create(name: "Yomiuriland (読売ランド前駅 - Yomiurilando-mae)", description: "Very close to the first place I lived, an amusement park with a cool illumination around the holidays. Shout out Miki.", latitude: 35.62528913544555, longitude: 139.51756769931205)
+Place.create(name: "読売ランド前駅 (Yomiurilando-mae)", description: "Very close to the first place I lived, an amusement park with a cool illumination around the holidays. Shout out Miki.", latitude: 35.62528913544555, longitude: 139.51756769931205)
 Place.create(name: "Terrace Hatagaya", description: "Third place I lived in this gorgeous city.", latitude: 35.68314080705679, longitude: 139.6765559530985)
 Place.create(name: "Ueno Station", description: "Close to the best food in Tokyo ;)", latitude: 35.71468986803839, longitude: 139.7773661839696)
 Place.create(name: "Arenmoku", description: "Best food in Tokyo HANDS DOWN.", latitude: 35.904465358675836, longitude: 139.8274220622168)
@@ -317,7 +317,7 @@ Comment.create(body: "ARANKU 5-ever.", user_id: User.find_by(username: "bigsis")
 Comment.create(body: "Wrote music with Austin here, he's always making me listen to Steve Lacey lol. Aust can write music like a motherfucker and he gave me books to read to.", user_id: User.find_by(username: "bigsis").id, place_id: Place.find_by(name: "Nakameguro Lounge").id)
 Comment.create(body: "I showed up at 1am and they welcomed me in.", user_id: User.find_by(username: "bigsis").id, place_id: Place.find_by(name: "英会話シェアハウス").id)
 Comment.create(body: "I showed up on the sidewalk with a suitcase and then went out for drinks with the person showing me the apartment.", user_id: User.find_by(username: "bigsis").id, place_id: Place.find_by(name: "Takaido Station").id)
-Comment.create(body: "Peaceful.", user_id: User.find_by(username: "bigsis").id, place_id: Place.find_by(name: "Yomiuriland (読売ランド前駅 - Yomiurilando-mae)").id)
+Comment.create(body: "Peaceful.", user_id: User.find_by(username: "bigsis").id, place_id: Place.find_by(name: "読売ランド前駅 (Yomiurilando-mae)").id)
 Comment.create(body: "Stress here-- small room, incredible views from the roof.", user_id: User.find_by(username: "bigsis").id, place_id: Place.find_by(name: "Terrace Hatagaya").id)
 Comment.create(body: "Seriously-- best food in Tokyo proper.", user_id: User.find_by(username: "bigsis").id, place_id: Place.find_by(name: "Arenmoku").id)
 
@@ -386,7 +386,7 @@ Visit.create(
 )
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
-    place_id: Place.find_by(name: "Yomiuriland (読売ランド前駅 - Yomiurilando-mae)").id,
+    place_id: Place.find_by(name: "読売ランド前駅 (Yomiurilando-mae)").id,
     hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
