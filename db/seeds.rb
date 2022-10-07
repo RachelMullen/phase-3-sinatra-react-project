@@ -336,7 +336,7 @@ Visit.create(
     hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
-    favorite: true,
+    favorite: false,
     avoid: false,
 )
 Visit.create(
@@ -372,7 +372,7 @@ Visit.create(
     hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
-    favorite: true,
+    favorite: false,
     avoid: false,
 )
 Visit.create(
@@ -390,7 +390,7 @@ Visit.create(
     hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
-    favorite: true,
+    favorite: false,
     avoid: false,
 )
 Visit.create(
@@ -399,7 +399,7 @@ Visit.create(
     hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
-    favorite: true,
+    favorite: false,
     avoid: false,
 )
 Visit.create(
@@ -408,7 +408,7 @@ Visit.create(
     hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
-    favorite: true,
+    favorite: false,
     avoid: false,
 )
 Visit.create(
@@ -426,7 +426,7 @@ Visit.create(
     hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
-    favorite: true,
+    favorite: false,
     avoid: false,
 )
 
