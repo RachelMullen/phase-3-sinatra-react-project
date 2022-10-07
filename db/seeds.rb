@@ -2,6 +2,8 @@ puts "🌱 Seeding spices..."
 
 # Seed your database here
 
+puts "seeding our  developer nodes"
+
 # Users
 User.create(username: "Elliot", bio: "I am a tub of hummus", locale: "Denver", password: "Elliot1234")
 User.create(username: "Rachel", bio: "Rachel's bio", locale: "Denver", password: "Rachel1234")
@@ -345,5 +347,103 @@ Comment.create(body: "Who doesn't love NASA? Check it out!", user_id: User.find_
 Comment.create(body: "They just don't make bars like this anymore, you know?", user_id: User.find_by(username: "Mullet").id, place_id: Place.find_by(name: "Lakeview Lounge").id)
 Comment.create(body: "It's not for me, but locals love it.", user_id: User.find_by(username: "Mullet").id, place_id: Place.find_by(name: "Viking").id)
 Comment.create(body: "This is an amazing step into Colorado's past, present, and future!", user_id: User.find_by(username: "Mullet").id, place_id: Place.find_by(name: "History Colorado Center").id)
+
+puts "cass time yall"
+
+User.create(username: "Cass", bio: "Just a free, fun gal!", locale: "Cap Hill, Denver", password: "1234")
+
+Hunt.create(title: "Art Circles and Vibes", user_id: User.find_by(username: "Cassidy"), public: true)
+
+
+Place.create(name: "Habitat Gallery", description: "Georgia Amar is a legend everyone should meet her.", latitude: 39.729545, longitude: -104.998461)
+Place.create(name: "Mercury Cafe", description: "Get acquianted with a tiger at this hopin' spot for coffee, tea, and noms PLUS live music, slam poetry, and open dance classes for all levels.", latitude: 39.751046, longitude: -104.985383)
+Place.create(name: "La Rumba", description: "Novice and professional Salsa dancers alike come together to move their bums and their feet.", latitude: 39.730547, latitude: -104.988843) 
+Place.create(name: "Milk Bar", description: "Not to be confused with Milk Market! Huge dance hall, meets cool-weird Denver. Many different rooms, each with their own genre of dance tunes. Truly a come one come all experience.", latitude: 39.733084, longitude: -104.988102)
+Place.create(name: "Moovment House", description: "Affordable, welcoming movement classes centered on reciprocity and movement for every body.", latitude: 39.725579, latitude: -104.949096)
+Place.create(name: "Clifford Still Museum", description: "Potent and expansive museum, nestled right next to the Museum of Contemporay Art, profiling a single artist's enitre body of work.", latitude: 39.736830, longitude: -104.989946)
+Place.create(name: "Santa Fe Arts District", description: "Visit Especially for the first friday of every month to enjoy exclusive and special free exhibits, as well as food trucks, drinks, and more! Highly recommend.", latitude: 39.729932, longitude: -104.998546)
+Place.create(name: "The Mayan Theater", description: "Classic movie theater on Broadway, typically showing more exclusive films alongside popular ones. I mean popcorn too... you can't go wrong!", latitude: 39.718483, longitude: -104.987386)
+
+Visit.create(
+    user_id: User.find_by(username: "Cass"),
+    place_id: Place.find_by(name: "Habitat Gallery").id,
+    hunt_id: Hunt.find_by(title: "Art Circles and Vibes").id,
+    complete: false,
+    wishlist: true,
+    favorite: false,
+    avoid: false,
+)
+Visit.create(
+    user_id: User.find_by(username: "Cass"),
+    place_id: Place.find_by(name: "Mercury Cafe").id,
+    hunt_id: Hunt.find_by(title: "Art Circles and Vibes").id,
+    complete: false,
+    wishlist: false,
+    favorite: true,
+    avoid: false,
+)
+Visit.create(
+    user_id: User.find_by(username: "Cass"),
+    place_id: Place.find_by(name: "La Rumba").id,
+    hunt_id: Hunt.find_by(title: "Art Circles and Vibes").id,
+    complete: true,
+    wishlist: false,
+    favorite: false,
+    avoid: false,
+)
+Visit.create(
+    user_id: User.find_by(username: "Cass"),
+    place_id: Place.find_by(name: "Milk Bar").id,
+    hunt_id: Hunt.find_by(title: "Art Circles and Vibes").id,
+    complete: false,
+    wishlist: false,
+    favorite: true,
+    avoid: false,
+)
+Visit.create(
+    user_id: User.find_by(username: "Cass"),
+    place_id: Place.find_by(name: "Moovment House").id,
+    hunt_id: Hunt.find_by(title: "Art Circles and Vibes").id,
+    complete: false,
+    wishlist: false,
+    favorite: false,
+    avoid: false,
+)
+Visit.create(
+    user_id: User.find_by(username: "Cass"),
+    place_id: Place.find_by(name: "Clifford Still Museum").id,
+    hunt_id: Hunt.find_by(title: "Art Circles and Vibes").id,
+    complete: false,
+    wishlist: true,
+    favorite: false,
+    avoid: false,
+)
+Visit.create(
+    user_id: User.find_by(username: "Cass"),
+    place_id: Place.find_by(name: "Santa Fe Arts District").id,
+    hunt_id: Hunt.find_by(title: "Art Circles and Vibes").id,
+    complete: false,
+    wishlist: true,
+    favorite: false,
+    avoid: false,
+)
+Visit.create(
+    user_id: User.find_by(username: "Cass"),
+    place_id: Place.find_by(name: "The Mayan Theater").id,
+    hunt_id: Hunt.find_by(title: "Art Circles and Vibes").id,
+    complete: false,
+    wishlist: false,
+    favorite: true,
+    avoid: false,
+)
+
+Comment.create(body: "Can't wait to go back. Pro tip, bring popsicles!", user_id: User.find_by(username: "Cass").id, place_id: Place.find_by(name: "Habitat Gallery").id)
+Comment.create(body: "Good for any occasion honestly.", user_id: User.find_by(username: "Cass").id, place_id: Place.find_by(name: "Mercury Cafe").id)
+Comment.create(body: "What a release!", user_id: User.find_by(username: "Cass").id, place_id: Place.find_by(name: "Milk Bar").id)
+Comment.create(body: "I especially liked the Gaga class, i think her name was Cassidy. So good!", user_id: User.find_by(username: "Cass").id, place_id: Place.find_by(name: "Moovment House").id)
+Comment.create(body: "Watched Marcell the Shell here and I think I cried three times. Touching.", user_id: User.find_by(username: "Cass").id, place_id: Place.find_by(name: "The Mayan Theater").id)
+
+
+
 
 puts "✅ Done seeding!"
