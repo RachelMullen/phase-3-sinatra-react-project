@@ -83,7 +83,12 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/:user_id/create" do
-    Hunt.create(title: params[:title], locale: params[:locale], user_id: params[:user_id], public: params[:public]).to_json
+    Hunt.create(title: params[:title], locale: params[:locale], user_id: params[:user_id], public: params[:public]).id.to_json
+  end
+
+  post "/:user_id/:hunt_id/add" do
+    Place.create(name: params[:name], description: params[:description], latitude: params[:latitude], longitude: params[:longitude]).to_json
+    Visit.create(user_id: params[:user_id], place_id: Place.find_by(name: params[:name]).id, hunt_id: params[:hunt_id], complete: false, wishlist: false, favorite: false, avoid: false).to_json
   end
  
 end
