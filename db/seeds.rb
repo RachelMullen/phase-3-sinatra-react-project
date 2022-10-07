@@ -261,9 +261,9 @@ Hunt.create(title: "Nerd Stuff", user_id: User.find_by(username: "Mullet"), publ
 
 Place.create(name: "Don's Club Tavern", description: "Unassuming veteran with vinyl booths & wood paneling featuring cocktails, pool & an outdoor patio.", latitude: 39.72594870943603, longitude: -104.97816344433357)
 Place.create(name: "Candlelight Tavern", description: "A dark, chill tradition for booze bargains, burgers, sports on TV & games from pool to shuffleboard.", latitude: 39.710226257311305, longitude: -104.98042022268027)
-Place.create(name: "Lakeview Lounge", description: "Vintage, cash-only dive bar offering pool & foosball tables & a patio overlooking Sloan's Lake.", latitude: 39.75103821469635, latitude: -105.05363051549632)
+Place.create(name: "Lakeview Lounge", description: "Vintage, cash-only dive bar offering pool & foosball tables & a patio overlooking Sloan's Lake.", latitude: 39.75103821469635, longitude: -105.05363051549632)
 Place.create(name: "Viking", description: "Biker bar on West Colfax.", latitude: 39.74091602393617, longitude: -105.04958577517503)
-Place.create(name: "Wings Over the Rockies Air & Space Museum", description: "Wartime aircraft, WWII uniform collection & aviation art on the former site of Lowry Air Force Base.", latitude: 39.72096494977194, latitude: -104.89550750200648)
+Place.create(name: "Wings Over the Rockies Air & Space Museum", description: "Wartime aircraft, WWII uniform collection & aviation art on the former site of Lowry Air Force Base.", latitude: 39.72096494977194, longitude: -104.89550750200648)
 Place.create(name: "Denver Public Library: Central Library", description: "Take a look, it's in a book!", latitude: 39.742172513731724, longitude: -104.9860303515646)
 Place.create(name: "History Colorado Center", description: "Interactive museum showcasing state-history exhibits, lectures & more in an eco-friendly building.", latitude: 39.73740196872607, longitude: -104.9881886330873)
 Place.create(name: "Denver Museum of Nature & Science", description: "Take a look, it's in a book!", latitude: 39.74768281167681, longitude: -104.94289363269709)
@@ -357,9 +357,9 @@ Hunt.create(title: "Art Circles and Vibes", user_id: User.find_by(username: "Cas
 
 Place.create(name: "Habitat Gallery", description: "Georgia Amar is a legend everyone should meet her.", latitude: 39.729545, longitude: -104.998461)
 Place.create(name: "Mercury Cafe", description: "Get acquianted with a tiger at this hopin' spot for coffee, tea, and noms PLUS live music, slam poetry, and open dance classes for all levels.", latitude: 39.751046, longitude: -104.985383)
-Place.create(name: "La Rumba", description: "Novice and professional Salsa dancers alike come together to move their bums and their feet.", latitude: 39.730547, latitude: -104.988843) 
+Place.create(name: "La Rumba", description: "Novice and professional Salsa dancers alike come together to move their bums and their feet.", latitude: 39.730547, longitude: -104.988843) 
 Place.create(name: "Milk Bar", description: "Not to be confused with Milk Market! Huge dance hall, meets cool-weird Denver. Many different rooms, each with their own genre of dance tunes. Truly a come one come all experience.", latitude: 39.733084, longitude: -104.988102)
-Place.create(name: "Moovment House", description: "Affordable, welcoming movement classes centered on reciprocity and movement for every body.", latitude: 39.725579, latitude: -104.949096)
+Place.create(name: "Moovment House", description: "Affordable, welcoming movement classes centered on reciprocity and movement for every body.", latitude: 39.725579, longitude: -104.949096)
 Place.create(name: "Clifford Still Museum", description: "Potent and expansive museum, nestled right next to the Museum of Contemporay Art, profiling a single artist's enitre body of work.", latitude: 39.736830, longitude: -104.989946)
 Place.create(name: "Santa Fe Arts District", description: "Visit Especially for the first friday of every month to enjoy exclusive and special free exhibits, as well as food trucks, drinks, and more! Highly recommend.", latitude: 39.729932, longitude: -104.998546)
 Place.create(name: "The Mayan Theater", description: "Classic movie theater on Broadway, typically showing more exclusive films alongside popular ones. I mean popcorn too... you can't go wrong!", latitude: 39.718483, longitude: -104.987386)
