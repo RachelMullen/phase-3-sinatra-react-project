@@ -295,7 +295,7 @@ puts "big sis seeding"
 
 User.create(username: "bigsis", bio: "giving everything my all", locale: "Tokyo/NY", password: "1234")
 
-Hunt.create(title: "Tokyo Memories ^_^", locale: "Tokyo", user_id: User.find_by(username: "bigsis").id, public: true)
+Hunt.create(title: "Tokyo Memories", locale: "Tokyo", user_id: User.find_by(username: "bigsis").id, public: true)
 
 Place.create(name: "WOMB", description: "Tri-level club in the heart of Shibuya, featuring a balanced roster of state-of-the-art eclectic and popular electronic acts.", latitude: 35.658606442274305, longitude: 139.69495582699568)
 Place.create(name: "Circus", description: "Mid-tier club in terms of built-in crowd and diversity of acts. Unsung hero.", latitude: 35.65430946353367, longitude: 139.70566482884476)
@@ -305,7 +305,7 @@ Place.create(name: "Nakameguro Lounge", description: "Coffee shop located 30 sec
 Place.create(name: "英会話シェアハウス", description: "First place I lived in Tokyo.", latitude: 35.61845530450259, longitude: 139.523109455393)
 Place.create(name: "Takaido Station", description: "Second place I lived in Tokyo.", latitude: 35.68342835627, longitude: 139.6152812288455)
 Place.create(name: "Yomiuriland (読売ランド前駅 - Yomiurilando-mae)", description: "Very close to the first place I lived, an amusement park with a cool illumination around the holidays. Shout out Miki.", latitude: 35.62528913544555, longitude: 139.51756769931205)
-Place.create(name: "Terrace Hatagaya", description: "Third place I lived in this grogeous city.", latitude: 35.68314080705679, longitude: 139.6765559530985)
+Place.create(name: "Terrace Hatagaya", description: "Third place I lived in this gorgeous city.", latitude: 35.68314080705679, longitude: 139.6765559530985)
 Place.create(name: "Ueno Station", description: "Close to the best food in Tokyo ;)", latitude: 35.71468986803839, longitude: 139.7773661839696)
 Place.create(name: "Arenmoku", description: "Best food in Tokyo HANDS DOWN.", latitude: 35.904465358675836, longitude: 139.8274220622168)
 Place.create(name: "DJ BAR Bridge", description: "Very cool listening bar tucked into an alley in Shibuya.", latitude: 35.66009237715224, longitude: 139.70163706745106)
@@ -324,7 +324,7 @@ Comment.create(body: "Seriously-- best food in Tokyo proper.", user_id: User.fin
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "WOMB").id,
-    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -333,7 +333,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "Circus").id,
-    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -342,7 +342,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "AGEHA").id,
-    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -351,7 +351,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "Sound Museum Vision").id,
-    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -360,7 +360,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "Nakameguro Lounge").id,
-    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -369,7 +369,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "英会話シェアハウス").id,
-    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -378,7 +378,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "Takaido Station").id,
-    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -387,7 +387,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "Yomiuriland (読売ランド前駅 - Yomiurilando-mae)").id,
-    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -396,7 +396,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "Terrace Hatagaya").id,
-    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -405,7 +405,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "Ueno Station").id,
-    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -414,7 +414,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "Arenmoku").id,
-    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -423,7 +423,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "DJ BAR Bridge").id,
-    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories").id,
     complete: true,
     wishlist: false,
     favorite: true,
