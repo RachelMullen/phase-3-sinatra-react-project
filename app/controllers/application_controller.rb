@@ -75,5 +75,15 @@ class ApplicationController < Sinatra::Base
     Hunt.destroy_all.to_json,
     Comment.destroy_all.to_json]
   end
+
+  get "/userhash" do
+    userhash = {}
+    User.all.map{|u| userhash[u.id] = u.username }
+    userhash.to_json
+  end
+
+  post "/:user_id/create" do
+    Hunt.create(title: params[:title], locale: params[:locale], user_id: params[:user_id], public: params[:public]).to_json
+  end
  
 end

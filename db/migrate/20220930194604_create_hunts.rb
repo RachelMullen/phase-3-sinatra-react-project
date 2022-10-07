@@ -4,6 +4,7 @@ class CreateHunts < ActiveRecord::Migration[6.1]
       t.string :title
       t.integer :user_id
       t.boolean :public
+      t.string :locale
 
       t.timestamps
     end
