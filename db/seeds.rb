@@ -324,7 +324,7 @@ Comment.create(body: "Seriously-- best food in Tokyo proper.", user_id: User.fin
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "WOMB").id,
-    hunt_id: Hunt.find_by(title: "Tokyo for Big Sister").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -333,7 +333,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "Circus").id,
-    hunt_id: Hunt.find_by(title: "Tokyo for Big Sister").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -342,7 +342,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "AGEHA").id,
-    hunt_id: Hunt.find_by(title: "Tokyo for Big Sister").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -351,7 +351,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "Sound Museum Vision").id,
-    hunt_id: Hunt.find_by(title: "Tokyo for Big Sister").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -360,7 +360,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "Nakameguro Lounge").id,
-    hunt_id: Hunt.find_by(title: "Tokyo for Big Sister").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -369,7 +369,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "英会話シェアハウス").id,
-    hunt_id: Hunt.find_by(title: "Tokyo for Big Sister").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -378,7 +378,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "Takaido Station").id,
-    hunt_id: Hunt.find_by(title: "Tokyo for Big Sister").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -387,7 +387,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "Yomiuriland (読売ランド前駅 - Yomiurilando-mae)").id,
-    hunt_id: Hunt.find_by(title: "Tokyo for Big Sister").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -396,7 +396,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "Terrace Hatagaya").id,
-    hunt_id: Hunt.find_by(title: "Tokyo for Big Sister").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -405,7 +405,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "Ueno Station").id,
-    hunt_id: Hunt.find_by(title: "Tokyo for Big Sister").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -414,7 +414,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "Arenmoku").id,
-    hunt_id: Hunt.find_by(title: "Tokyo for Big Sister").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
     complete: true,
     wishlist: false,
     favorite: true,
@@ -423,7 +423,7 @@ Visit.create(
 Visit.create(
     user_id: User.find_by(username: "bigsis").id,
     place_id: Place.find_by(name: "DJ BAR Bridge").id,
-    hunt_id: Hunt.find_by(title: "Tokyo for Big Sister").id,
+    hunt_id: Hunt.find_by(title: "Tokyo Memories ^_^").id,
     complete: true,
     wishlist: false,
     favorite: true,
