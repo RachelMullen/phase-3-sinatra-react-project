@@ -295,7 +295,7 @@ puts "big sis seeding"
 
 User.create(username: "bigsis", bio: "giving everything my all", locale: "Tokyo/NY", password: "1234")
 
-Hunt.create(title: "Tokyo for Big Sister", locale: "Tokyo", user_id: User.find_by(username: "bigsis").id, public: true)
+Hunt.create(title: "Tokyo Memories ^_^", locale: "Tokyo", user_id: User.find_by(username: "bigsis").id, public: true)
 
 Place.create(name: "WOMB", description: "Tri-level club in the heart of Shibuya, featuring a balanced roster of state-of-the-art eclectic and popular electronic acts.", latitude: 35.658606442274305, longitude: 139.69495582699568)
 Place.create(name: "Circus", description: "Mid-tier club in terms of built-in crowd and diversity of acts. Unsung hero.", latitude: 35.65430946353367, longitude: 139.70566482884476)
