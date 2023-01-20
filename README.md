@@ -3,7 +3,7 @@
 
 ## TABLE OF CONTENTS
 
-- [Function & Features] (#function-&-features)
+- [FUNCTION & FEATURES] (#function-&-features)
 - [Demo/Visuals] (#demo-visuals)
 - [Tech Stack] (#tech-stack)
 - [Future Opportunities for Enhancement] (#future-opportunities-for-enhancement)
